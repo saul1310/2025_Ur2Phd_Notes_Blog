@@ -3,6 +3,10 @@
     "listing": "/index.html",
     "items": [
       "/posts/post-with-code/index.html",
+      "/posts/Topic_1/index.html",
+      "/posts/topic_2/index.html",
+      "/posts/topic_3/index.html",
+      "/posts/Topic_4/index.html",
       "/posts/welcome/index.html"
     ]
   }
