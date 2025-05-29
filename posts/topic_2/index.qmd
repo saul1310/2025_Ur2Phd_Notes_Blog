@@ -1,0 +1,43 @@
+---
+title: "SLR Investigating the Impact of Human Interactions between Software Developers and Users"
+author: "Saul Ifshin"
+date: "2025-05-28"
+categories: [Research Ideas]
+image: "image.jpg"
+---
+
+
+### SLR investigating the impact of human interactions between software developers and users
+
+**Abstract**
+
+The end user experience of software can often be unpredictable, even with focus group sessions and extensive testing. The interactions between software developers and end users plays an important role in the outcome of the product, with particular importance in the areas of requirements gathering and usability satisfaction. This research will focus on identifying forms of interaction, and measuring their effectiveness, as well as challenges and barriers to meaningful collaboration.
+
+## Research Questions
+
+- **RQ1**: What forms of interaction between software developers and users are commonly studied in the literature?
+- **RQ2**: How do these interactions affect the quality and success of software systems?
+- **RQ3**: What challenges or barriers exist in facilitating effective developer-user interactions?
+- **RQ4**: identifying forms of interaction
+- **RQ5**: How do different development contexts (e.g., agile vs. traditional, open source vs. enterprise) influence the nature of developer-user interactions?
+
+**Requirements**
+
+## Timeline
+
+| Week | Task |
+| --- | --- |
+| 1 | Define scope, inclusion/exclusion criteria, and finalize research questions |
+| 2-3 | Conduct preliminary search in databases (ACM DL, IEEE Xplore, Scopus, Google Scholar) |
+| 4 | Screen titles and abstracts, remove duplicates |
+| 5-6 | Perform full-text review of selected papers |
+| 7 | Extract and code data (using Excel, NVivo, or another tool) |
+| 8 | Perform quality assessment of selected studies |
+| 9 | Synthesize results (narrative synthesis or thematic coding) |
+| 10 | Draft findings and discuss implications |
+| 11 | Write the full paper, revise abstract and research questions as needed |
+| 12 | Final edits, formatting, citation management, submission prep |
+
+**Sources**
+
+The Impact of human aspects on the interactions between software developers and end-users in software engineering: a Systematic Literature review

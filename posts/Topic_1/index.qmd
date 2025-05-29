@@ -1,0 +1,62 @@
+---
+title: "Self Healing Test Cases"
+author: "Saul Ifshin"
+date: "2025-05-28"
+categories: [Research Ideas]
+image: "image.jpg"
+---
+
+
+### Self Healing Test Case integration in CI/CD pipeline for python packages
+
+**Abstract**
+
+A package that analyzes changes made to a codebase and its existing test cases and tweaks them to prevent mismatches between testcases and the code making it Self Healing, as well as providing the engineer with information on possible anomalies before the new version of the package is deployed.
+
+Research Questions
+
+- **RQ1**
+    - How can code changes (commits, diffs) be efficiently detected and mapped to specific test cases?
+    - What methods are most accurate for identifying which tests are affected by a given code change?
+- **RQ2**
+    - How can test failures be classified into categories such as syntax issues, broken locators, deprecated methods, or logical mismatches?
+- **RQ3**
+    - What strategies can be used to correct failing test cases without human intervention?
+    - To what extent can ML or static analysis improve the accuracy of these automatic corrections?
+- **RQ3**
+    - How can the system use the context of a function/class/module to suggest or make appropriate test updates?
+    - Can a large language model (LLM) or fine-tuned model be integrated for better semantic understanding of code and test logic?
+- **RQ4**
+    - How should the system report its corrections or flag anomalies to the developer?
+    - Can developer feedback be integrated into a learning loop for improving future corrections?
+
+## Timeline
+
+| Week | Tasks |
+| --- | --- |
+| **Week 1** | Research existing work in self-healing test cases, static analysis, and test impact analysis. Define the architecture and tools (e.g., `pytest`, `ast`, `git diff`, `LLMs`, `CI tools`). |
+| **Week 2** | Set up a baseline CI/CD pipeline for Python (GitHub Actions/Jenkins). Create a sample test suite with intentional failures for prototyping. |
+| **Week 3** | Implement code change detection module (parse `git diff`, AST analysis) to map changed lines to functions. |
+| **Week 4** | Create test-case mapping logic using code coverage (e.g., via `coverage.py`) or metadata. |
+| **Week 5** | Begin developing failure classifier to categorize test errors (e.g., locator mismatch, syntax error). |
+| **Week 6** | Build a prototype "self-healing" engine to apply corrections (e.g., auto-correcting dynamic locators or parameter mismatches). |
+| **Week 7** | Integrate a lightweight LLM (like GPT-4 via API or locally fine-tuned model) for semantic analysis and auto-repair suggestions. |
+| **Week 8** | Build a feedback and reporting system: show what was changed, why, and allow engineer to approve/reject. |
+| **Week 9** | Integrate the full pipeline into CI/CD. Trigger on pull requests or commits. Include test result diffing before and after healing. |
+| **Week 10** | Test, evaluate (accuracy, false positives, performance), document, and prepare final report/demo. Include suggestions for future improvements (e.g., deep learning test repair, human-in-the-loop). |
+
+---
+
+## **Sources**
+
+**Googles AI testing in android development with android VTS**
+
+**Microsofts AI-powered testing for Windows OS**
+
+**IBM’s AI-powered test automation for Cloud Services**
+
+**Facebook Sapinez aI automated test case generation**
+
+The Future of Software Testing: AI powered Test Case Generation and Validation
+
+-Mohhamad Baqar & Rajat Khanda
