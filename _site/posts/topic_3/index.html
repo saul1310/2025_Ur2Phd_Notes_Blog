@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Saul Ifshin">
+<meta name="dcterms.date" content="2025-05-28">
 
-<title>2025_Ur2Phd_Notes_Blog</title>
+<title>Visualizing Traceability Graphs for AI-Critical Systems – 2025_Ur2Phd_Notes_Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +25,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,77 +69,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">2025_Ur2Phd_Notes_Blog</span>
     </a>
   </div>
@@ -150,7 +92,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -173,226 +115,150 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">2025_Ur2Phd_Notes_Blog</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Visualizing Traceability Graphs for AI-Critical Systems</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Research Ideas</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Saul Ifshin </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 28, 2025</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29kZQ==">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UmVzZWFyY2glMjBJZGVhcw==">Research Ideas <span class="quarto-category-count">(4)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<section id="visualizing-and-exploring-traceability-graphs-for-ai-critical-systems" class="level2">
+<h2 class="anchored" data-anchor-id="visualizing-and-exploring-traceability-graphs-for-ai-critical-systems">Visualizing and Exploring Traceability Graphs for AI-Critical Systems</h2>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+</section>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>—-</p>
+<p><strong>Traceability T</strong>he ability to <strong>track and link different artifacts</strong> throughout the development lifecycle — from requirements → design → implementation → testing → deployment is a crucial component of successful software that meets goals and performs well. As AI is integrated into the software development lifecycle there is a lack of research on the topic of its trustworthiness and reliability in critical use cases, including healthcare, autonomous transportation, and defense. This research aims to investigate the current state an limitations of end to end traceability in AI critical systems. Through the analysis if static and dynamic code artifacts, metadata, and machine learning pipeline logs we will attempt to produce a framework for generating traceability graphs that make development process more transparent and less prone to errors. We will also produce a tool that will visualize traceability graphs in a modern and easy to understand way, with nodes and edges representing artifacts and traceability links, with visual cues on their current status.</p>
+<p>In <strong>critical systems utilizing AI</strong>, especially those used in <strong>healthcare, autonomous vehicles, finance, or defense</strong>, this means there is a necessity for tracing:</p>
+<ul>
+<li><strong>Requirements</strong> → What does the system need to do? (e.g., “Detect pedestrians safely”)</li>
+<li><strong>Data</strong> → What datasets were used to train the model?</li>
+<li><strong>Models</strong> → What algorithms or architectures were used?</li>
+<li><strong>Training Processes</strong> → What parameters, loss functions, or preprocessing steps were applied?</li>
+<li><strong>Code</strong> → What source code implements model logic?</li>
+<li><strong>Testing</strong> → What test cases validate performance and safety?</li>
+<li><strong>Deployment</strong> → How is the model deployed and monitored in real-world conditions?</li>
+</ul>
+</section>
+<section id="research-questions" class="level2">
+<h2 class="anchored" data-anchor-id="research-questions">Research questions</h2>
+<ol type="1">
+<li><strong>RQ1</strong>: What are the current challenges in establishing end-to-end traceability in AI-critical systems?</li>
+<li><strong>RQ2</strong>: How can traceability links between AI lifecycle artifacts be accurately established?</li>
+<li><strong>RQ3</strong>: What formats and models are best for representing and visualizing traceability (e.g., graphs, hypergraphs)?</li>
+<li><strong>RQ4</strong>: How can we automate traceability graph generation using static/dynamic analysis and metadata?</li>
+<li><strong>RQ5</strong>: How does visualization affect developers’ and auditors’ ability to detect gaps, risks, or inconsistencies?</li>
+</ol>
+</section>
+<section id="timeline" class="level2">
+<h2 class="anchored" data-anchor-id="timeline">Timeline</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Week</th>
+<th>Objectives</th>
+<th>Deliverables</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>Literature review</strong>: Study traceability in SE, AI lifecycle models, and AI/ML DevOps.</td>
+<td>Annotated bibliography, summaries of key traceability frameworks (e.g., T-Reqs, MLFlow).</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>Problem scoping</strong>: Define traceability challenges in AI-critical systems.</td>
+<td>Refined research questions and conceptual model of AI lifecycle artifacts.</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>Requirements gathering</strong>: Identify necessary metadata and artifacts for traceability.</td>
+<td>Requirements doc + artifact taxonomy (datasets, models, training logs, etc.)</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>Existing tools audit</strong>: Analyze current traceability and pipeline tools (MLFlow, DVC).</td>
+<td>Evaluation matrix comparing capabilities vs traceability needs.</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><strong>Prototype design</strong>: Design a tool to extract and represent traceability links.</td>
+<td>Initial system architecture, mockups of visualization interface.</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><strong>Implementation (part 1)</strong>: Build core graph model + metadata parsers.</td>
+<td>Python/Rust module for creating traceability graphs from example projects.</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td><strong>Implementation (part 2)</strong>: Add support for code + dataset versioning integration.</td>
+<td>Code that links models to data/code commits and requirements.</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td><strong>Visualization layer</strong>: Create UI to navigate and highlight traceability relationships.</td>
+<td>Interactive prototype (e.g., web-based graph viewer using D3.js or Graphviz).</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td><strong>Testing and evaluation</strong>: Run usability tests with developers/researchers.</td>
+<td>Feedback logs, bug reports, metrics on gap detection accuracy.</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td><strong>Wrap-up and paper writing</strong>: Finalize tool and write research paper draft.</td>
+<td>Research paper draft, tool repo, and demo video.</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bmV3cyUyQ2NvZGUlMkNhbmFseXNpcw==" data-listing-date-sort="1748415600000" data-listing-file-modified-sort="1748470347540" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<div class="thumbnail"><a href="./posts/post-with-code/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/post-with-code/image.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post-with-code/index.html" class="no-external">Post With Code</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">analysis</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/post-with-code/index.html" class="no-external">
-This is a post with executable code.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/post-with-code/index.html" class="no-external">
-<div class="listing-date">
-May 28, 2025
-</div>
-<div class="listing-author">
-Harlow Malloc
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="UmVzZWFyY2glMjBJZGVhcw==" data-listing-date-sort="1748415600000" data-listing-file-modified-sort="1748475499891" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="500">
-<div class="thumbnail"><a href="./posts/Topic_1/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/Topic_1/image.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Topic_1/index.html" class="no-external">Self Healing Test Cases</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2glMjBJZGVhcw=='); return false;">Research Ideas</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/Topic_1/index.html" class="no-external">
-<strong>Abstract</strong>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/Topic_1/index.html" class="no-external">
-<div class="listing-date">
-May 28, 2025
-</div>
-<div class="listing-author">
-Saul Ifshin
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="UmVzZWFyY2glMjBJZGVhcw==" data-listing-date-sort="1748415600000" data-listing-file-modified-sort="1748479352847" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="273">
-<div class="thumbnail"><a href="./posts/topic_2/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/topic_2/image.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/topic_2/index.html" class="no-external">SLR Investigating the Impact of Human Interactions between Software Developers and Users</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2glMjBJZGVhcw=='); return false;">Research Ideas</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/topic_2/index.html" class="no-external">
-<strong>Abstract</strong>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/topic_2/index.html" class="no-external">
-<div class="listing-date">
-May 28, 2025
-</div>
-<div class="listing-author">
-Saul Ifshin
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="UmVzZWFyY2glMjBJZGVhcw==" data-listing-date-sort="1748415600000" data-listing-file-modified-sort="1748479428608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="570">
-<div class="thumbnail"><a href="./posts/topic_3/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/topic_3/image.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/topic_3/index.html" class="no-external">Visualizing Traceability Graphs for AI-Critical Systems</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2glMjBJZGVhcw=='); return false;">Research Ideas</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/topic_3/index.html" class="no-external">
-—-
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/topic_3/index.html" class="no-external">
-<div class="listing-date">
-May 28, 2025
-</div>
-<div class="listing-author">
-Saul Ifshin
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="UmVzZWFyY2glMjBJZGVhcw==" data-listing-date-sort="1748415600000" data-listing-file-modified-sort="1748479464098" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="550">
-<div class="thumbnail"><a href="./posts/Topic_4/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/Topic_4/image.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Topic_4/index.html" class="no-external">Research Idea: Human-AI Collaboration in Code Review</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2glMjBJZGVhcw=='); return false;">Research Ideas</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/Topic_4/index.html" class="no-external">
-<strong>Abstract</strong>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/Topic_4/index.html" class="no-external">
-<div class="listing-date">
-May 28, 2025
-</div>
-<div class="listing-author">
-Saul Ifshin
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="bmV3cw==" data-listing-date-sort="1748156400000" data-listing-file-modified-sort="1748470347541" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
-<div class="thumbnail"><a href="./posts/welcome/index.html" class="no-external">
-
-<p class="card-img-top"><img src="posts\welcome\thumbnail.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Welcome To My Blog</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/welcome/index.html" class="no-external">
-This is the first post in a Quarto blog. Welcome!
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-May 25, 2025
-</div>
-<div class="listing-author">
-Tristan O’Malley
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
