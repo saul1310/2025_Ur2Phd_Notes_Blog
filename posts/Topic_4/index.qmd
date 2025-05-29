@@ -1,0 +1,57 @@
+---
+title: "Research Idea: Human-AI Collaboration in Code Review"
+author: "Saul Ifshin"
+date: "2025-05-28"
+categories: [Research Ideas]
+image: "image.jpg"
+---
+## **Research Idea: Human-AI Collaboration in Code Review**
+
+**Abstract**
+
+As Code Generation Tools become more advanced and competent, they are being integrated into many tasks in the software engineering process. One of these uses is code review, the process of assessing code in a methodical way to identify bugs, ensure code quality, and let multiple engineers sign off on changes before its pushed to production. The goal of the paper is to explore the current state of AI assisted code review, identify bottlenecks and hang-ups, and make it more efficient
+
+**Research Questions**
+
+- **RQ1:** What kinds of code review tasks are best suited for AI assistance versus human evaluation?
+- **RQ2:** How does the presence of AI suggestions affect human reviewers’ accuracy and efficiency?
+- **RQ3:** What factors influence trust in AI during code review?
+- **RQ4:** How can human-AI collaboration be designed to improve both performance and developer satisfaction?
+- **RQ5:** How can dialog-based interactions between developers and AI assistants improve trust and accuracy in codebases? Could we create a framework to describe a more conversational style of AI use in code review?
+    - Could a small scale test using a AI we create be done to measure effectiveness with and without a conversational aspect?
+- **RQ5**: How does AI presence in code review affect developer trust, confidence in code and design decisions,  and susceptibility to AI errors?
+
+**Additional objectives**
+
+- identify code issues where AI tools perform best, and issues where they perform poorly
+- Evaluate the effectiveness of human reviewers with and without AI assistance.
+- Measure trust, usability, and cognitive load in human-AI code review.
+- Propose interaction design patterns or models for effective AI collaboration.
+
+Methodology:
+
+I'm currently unsure how we could conduct testing with our limited resources right now
+
+Possible contributions
+
+- A framework or taxonomy for code review tasks and AI suitability.
+- Insights into how trust and performance vary with different collaboration models.
+- Design recommendations for AI systems in collaborative software engineering.
+- Open-source dataset or tool? Unsure about this one right now with current research questions
+
+## Timeline
+
+| Week | Tasks |
+| --- | --- |
+| **Week 1** | Research existing work in self-healing test cases, static analysis, and test impact analysis. Define the architecture and tools (e.g., `pytest`, `ast`, `git diff`, `LLMs`, `CI tools`). |
+| **Week 2** | Set up a baseline CI/CD pipeline for Python (GitHub Actions/Jenkins). Create a sample test suite with intentional failures for prototyping. |
+| **Week 3** | Implement code change detection module (parse `git diff`, AST analysis) to map changed lines to functions. |
+| **Week 4** | Create test-case mapping logic using code coverage (e.g., via `coverage.py`) or metadata. |
+| **Week 5** | Begin developing failure classifier to categorize test errors (e.g., locator mismatch, syntax error). |
+| **Week 6** | Build a prototype "self-healing" engine to apply corrections (e.g., auto-correcting dynamic locators or parameter mismatches). |
+| **Week 7** | Integrate a lightweight LLM (like GPT-4 via API or locally fine-tuned model) for semantic analysis and auto-repair suggestions. |
+| **Week 8** | Build a feedback and reporting system: show what was changed, why, and allow engineer to approve/reject. |
+| **Week 9** | Integrate the full pipeline into CI/CD. Trigger on pull requests or commits. Include test result diffing before and after healing. |
+| **Week 10** | Test, evaluate (accuracy, false positives, performance), document, and prepare final report/demo. Include suggestions for future improvements (e.g., deep learning test repair, human-in-the-loop). |
+
+## **Sources**

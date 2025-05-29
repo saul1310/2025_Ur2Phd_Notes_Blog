@@ -1,0 +1,50 @@
+---
+title: "Visualizing Traceability Graphs for AI-Critical Systems"
+author: "Saul Ifshin"
+date: "2025-05-28"
+categories: [Research Ideas]
+image: "image.jpg"
+---
+
+## Visualizing and Exploring Traceability Graphs for AI-Critical Systems
+
+## 
+
+## Abstract
+
+—-
+
+**Traceability T**he ability to **track and link different artifacts** throughout the development lifecycle — from requirements → design → implementation → testing → deployment is a crucial component of successful software that meets goals and performs well. As AI is integrated into the software development lifecycle there is a lack of research on the topic of its trustworthiness and reliability in critical use cases, including healthcare, autonomous transportation, and defense. This research aims to investigate the current state an limitations of end to end traceability in AI critical systems. Through the analysis if static and dynamic code artifacts, metadata, and machine learning pipeline logs we will attempt to produce a framework for generating traceability graphs that make development process more transparent and less prone to errors. We will also produce a tool that will visualize traceability graphs in a modern and easy to understand way, with nodes and edges representing artifacts and traceability links, with visual cues on their current status.
+
+In **critical systems utilizing AI**, especially those used in **healthcare, autonomous vehicles, finance, or defense**, this means there is a necessity for tracing:
+
+- **Requirements** → What does the system need to do? (e.g., "Detect pedestrians safely")
+- **Data** → What datasets were used to train the model?
+- **Models** → What algorithms or architectures were used?
+- **Training Processes** → What parameters, loss functions, or preprocessing steps were applied?
+- **Code** → What source code implements model logic?
+- **Testing** → What test cases validate performance and safety?
+- **Deployment** → How is the model deployed and monitored in real-world conditions?
+
+## Research questions
+
+1. **RQ1**: What are the current challenges in establishing end-to-end traceability in AI-critical systems?
+2. **RQ2**: How can traceability links between AI lifecycle artifacts be accurately established?
+3. **RQ3**: What formats and models are best for representing and visualizing traceability (e.g., graphs, hypergraphs)?
+4. **RQ4**: How can we automate traceability graph generation using static/dynamic analysis and metadata?
+5. **RQ5**: How does visualization affect developers’ and auditors’ ability to detect gaps, risks, or inconsistencies?
+
+## Timeline
+
+| Week | Objectives | Deliverables |
+| --- | --- | --- |
+| 1 | **Literature review**: Study traceability in SE, AI lifecycle models, and AI/ML DevOps. | Annotated bibliography, summaries of key traceability frameworks (e.g., T-Reqs, MLFlow). |
+| 2 | **Problem scoping**: Define traceability challenges in AI-critical systems. | Refined research questions and conceptual model of AI lifecycle artifacts. |
+| 3 | **Requirements gathering**: Identify necessary metadata and artifacts for traceability. | Requirements doc + artifact taxonomy (datasets, models, training logs, etc.) |
+| 4 | **Existing tools audit**: Analyze current traceability and pipeline tools (MLFlow, DVC). | Evaluation matrix comparing capabilities vs traceability needs. |
+| 5 | **Prototype design**: Design a tool to extract and represent traceability links. | Initial system architecture, mockups of visualization interface. |
+| 6 | **Implementation (part 1)**: Build core graph model + metadata parsers. | Python/Rust module for creating traceability graphs from example projects. |
+| 7 | **Implementation (part 2)**: Add support for code + dataset versioning integration. | Code that links models to data/code commits and requirements. |
+| 8 | **Visualization layer**: Create UI to navigate and highlight traceability relationships. | Interactive prototype (e.g., web-based graph viewer using D3.js or Graphviz). |
+| 9 | **Testing and evaluation**: Run usability tests with developers/researchers. | Feedback logs, bug reports, metrics on gap detection accuracy. |
+| 10 | **Wrap-up and paper writing**: Finalize tool and write research paper draft. | Research paper draft, tool repo, and demo video. |
