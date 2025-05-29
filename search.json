@@ -1,31 +1,10 @@
 [
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "posts/topic_3/index.html#abstract",
-    "href": "posts/topic_3/index.html#abstract",
-    "title": "Visualizing Traceability Graphs for AI-Critical Systems",
-    "section": "Abstract",
-    "text": "Abstract\n—-\nTraceability The ability to track and link different artifacts throughout the development lifecycle — from requirements → design → implementation → testing → deployment is a crucial component of successful software that meets goals and performs well. As AI is integrated into the software development lifecycle there is a lack of research on the topic of its trustworthiness and reliability in critical use cases, including healthcare, autonomous transportation, and defense. This research aims to investigate the current state an limitations of end to end traceability in AI critical systems. Through the analysis if static and dynamic code artifacts, metadata, and machine learning pipeline logs we will attempt to produce a framework for generating traceability graphs that make development process more transparent and less prone to errors. We will also produce a tool that will visualize traceability graphs in a modern and easy to understand way, with nodes and edges representing artifacts and traceability links, with visual cues on their current status.\nIn critical systems utilizing AI, especially those used in healthcare, autonomous vehicles, finance, or defense, this means there is a necessity for tracing:\n\nRequirements → What does the system need to do? (e.g., “Detect pedestrians safely”)\nData → What datasets were used to train the model?\nModels → What algorithms or architectures were used?\nTraining Processes → What parameters, loss functions, or preprocessing steps were applied?\nCode → What source code implements model logic?\nTesting → What test cases validate performance and safety?\nDeployment → How is the model deployed and monitored in real-world conditions?"
-  },
-  {
-    "objectID": "posts/topic_3/index.html#research-questions",
-    "href": "posts/topic_3/index.html#research-questions",
-    "title": "Visualizing Traceability Graphs for AI-Critical Systems",
-    "section": "Research questions",
-    "text": "Research questions\n\nRQ1: What are the current challenges in establishing end-to-end traceability in AI-critical systems?\nRQ2: How can traceability links between AI lifecycle artifacts be accurately established?\nRQ3: What formats and models are best for representing and visualizing traceability (e.g., graphs, hypergraphs)?\nRQ4: How can we automate traceability graph generation using static/dynamic analysis and metadata?\nRQ5: How does visualization affect developers’ and auditors’ ability to detect gaps, risks, or inconsistencies?"
-  },
-  {
-    "objectID": "posts/topic_3/index.html#timeline",
-    "href": "posts/topic_3/index.html#timeline",
-    "title": "Visualizing Traceability Graphs for AI-Critical Systems",
-    "section": "Timeline",
-    "text": "Timeline\n\n\n\n\n\n\n\n\nWeek\nObjectives\nDeliverables\n\n\n\n\n1\nLiterature review: Study traceability in SE, AI lifecycle models, and AI/ML DevOps.\nAnnotated bibliography, summaries of key traceability frameworks (e.g., T-Reqs, MLFlow).\n\n\n2\nProblem scoping: Define traceability challenges in AI-critical systems.\nRefined research questions and conceptual model of AI lifecycle artifacts.\n\n\n3\nRequirements gathering: Identify necessary metadata and artifacts for traceability.\nRequirements doc + artifact taxonomy (datasets, models, training logs, etc.)\n\n\n4\nExisting tools audit: Analyze current traceability and pipeline tools (MLFlow, DVC).\nEvaluation matrix comparing capabilities vs traceability needs.\n\n\n5\nPrototype design: Design a tool to extract and represent traceability links.\nInitial system architecture, mockups of visualization interface.\n\n\n6\nImplementation (part 1): Build core graph model + metadata parsers.\nPython/Rust module for creating traceability graphs from example projects.\n\n\n7\nImplementation (part 2): Add support for code + dataset versioning integration.\nCode that links models to data/code commits and requirements.\n\n\n8\nVisualization layer: Create UI to navigate and highlight traceability relationships.\nInteractive prototype (e.g., web-based graph viewer using D3.js or Graphviz).\n\n\n9\nTesting and evaluation: Run usability tests with developers/researchers.\nFeedback logs, bug reports, metrics on gap detection accuracy.\n\n\n10\nWrap-up and paper writing: Finalize tool and write research paper draft.\nResearch paper draft, tool repo, and demo video."
+    "text": "About this blog"
   },
   {
     "objectID": "posts/Topic_1/index.html",
@@ -47,48 +26,6 @@
     "title": "Self Healing Test Cases",
     "section": "Sources",
     "text": "Sources\nGoogles AI testing in android development with android VTS\nMicrosofts AI-powered testing for Windows OS\nIBM’s AI-powered test automation for Cloud Services\nFacebook Sapinez aI automated test case generation\nThe Future of Software Testing: AI powered Test Case Generation and Validation\n-Mohhamad Baqar & Rajat Khanda"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "2025_Ur2Phd_Notes_Blog",
-    "section": "",
-    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 28, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nSelf Healing Test Cases\n\n\n\nResearch Ideas\n\n\n\n\n\n\n\n\n\nMay 28, 2025\n\n\nSaul Ifshin\n\n\n\n\n\n\n\n\n\n\n\n\nSLR Investigating the Impact of Human Interactions between Software Developers and Users\n\n\n\nResearch Ideas\n\n\n\n\n\n\n\n\n\nMay 28, 2025\n\n\nSaul Ifshin\n\n\n\n\n\n\n\n\n\n\n\n\nVisualizing Traceability Graphs for AI-Critical Systems\n\n\n\nResearch Ideas\n\n\n\n\n\n\n\n\n\nMay 28, 2025\n\n\nSaul Ifshin\n\n\n\n\n\n\n\n\n\n\n\n\nResearch Idea: Human-AI Collaboration in Code Review\n\n\n\nResearch Ideas\n\n\n\n\n\n\n\n\n\nMay 28, 2025\n\n\nSaul Ifshin\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMay 25, 2025\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
-    "objectID": "posts/topic_2/index.html",
-    "href": "posts/topic_2/index.html",
-    "title": "SLR Investigating the Impact of Human Interactions between Software Developers and Users",
-    "section": "",
-    "text": "Abstract\nThe end user experience of software can often be unpredictable, even with focus group sessions and extensive testing. The interactions between software developers and end users plays an important role in the outcome of the product, with particular importance in the areas of requirements gathering and usability satisfaction. This research will focus on identifying forms of interaction, and measuring their effectiveness, as well as challenges and barriers to meaningful collaboration."
-  },
-  {
-    "objectID": "posts/topic_2/index.html#research-questions",
-    "href": "posts/topic_2/index.html#research-questions",
-    "title": "SLR Investigating the Impact of Human Interactions between Software Developers and Users",
-    "section": "Research Questions",
-    "text": "Research Questions\n\nRQ1: What forms of interaction between software developers and users are commonly studied in the literature?\nRQ2: How do these interactions affect the quality and success of software systems?\nRQ3: What challenges or barriers exist in facilitating effective developer-user interactions?\nRQ4: identifying forms of interaction\nRQ5: How do different development contexts (e.g., agile vs. traditional, open source vs. enterprise) influence the nature of developer-user interactions?\n\nRequirements"
-  },
-  {
-    "objectID": "posts/topic_2/index.html#timeline",
-    "href": "posts/topic_2/index.html#timeline",
-    "title": "SLR Investigating the Impact of Human Interactions between Software Developers and Users",
-    "section": "Timeline",
-    "text": "Timeline\n\n\n\n\n\n\n\nWeek\nTask\n\n\n\n\n1\nDefine scope, inclusion/exclusion criteria, and finalize research questions\n\n\n2-3\nConduct preliminary search in databases (ACM DL, IEEE Xplore, Scopus, Google Scholar)\n\n\n4\nScreen titles and abstracts, remove duplicates\n\n\n5-6\nPerform full-text review of selected papers\n\n\n7\nExtract and code data (using Excel, NVivo, or another tool)\n\n\n8\nPerform quality assessment of selected studies\n\n\n9\nSynthesize results (narrative synthesis or thematic coding)\n\n\n10\nDraft findings and discuss implications\n\n\n11\nWrite the full paper, revise abstract and research questions as needed\n\n\n12\nFinal edits, formatting, citation management, submission prep\n\n\n\nSources\nThe Impact of human aspects on the interactions between software developers and end-users in software engineering: a Systematic Literature review"
   },
   {
     "objectID": "posts/Topic_4/index.html",
@@ -117,5 +54,54 @@
     "title": "Research Idea: Human-AI Collaboration in Code Review",
     "section": "Sources",
     "text": "Sources"
+  },
+  {
+    "objectID": "posts/topic_2/index.html",
+    "href": "posts/topic_2/index.html",
+    "title": "SLR Investigating the Impact of Human Interactions between Software Developers and Users",
+    "section": "",
+    "text": "Abstract\nThe end user experience of software can often be unpredictable, even with focus group sessions and extensive testing. The interactions between software developers and end users plays an important role in the outcome of the product, with particular importance in the areas of requirements gathering and usability satisfaction. This research will focus on identifying forms of interaction, and measuring their effectiveness, as well as challenges and barriers to meaningful collaboration."
+  },
+  {
+    "objectID": "posts/topic_2/index.html#research-questions",
+    "href": "posts/topic_2/index.html#research-questions",
+    "title": "SLR Investigating the Impact of Human Interactions between Software Developers and Users",
+    "section": "Research Questions",
+    "text": "Research Questions\n\nRQ1: What forms of interaction between software developers and users are commonly studied in the literature?\nRQ2: How do these interactions affect the quality and success of software systems?\nRQ3: What challenges or barriers exist in facilitating effective developer-user interactions?\nRQ4: identifying forms of interaction\nRQ5: How do different development contexts (e.g., agile vs. traditional, open source vs. enterprise) influence the nature of developer-user interactions?\n\nRequirements"
+  },
+  {
+    "objectID": "posts/topic_2/index.html#timeline",
+    "href": "posts/topic_2/index.html#timeline",
+    "title": "SLR Investigating the Impact of Human Interactions between Software Developers and Users",
+    "section": "Timeline",
+    "text": "Timeline\n\n\n\n\n\n\n\nWeek\nTask\n\n\n\n\n1\nDefine scope, inclusion/exclusion criteria, and finalize research questions\n\n\n2-3\nConduct preliminary search in databases (ACM DL, IEEE Xplore, Scopus, Google Scholar)\n\n\n4\nScreen titles and abstracts, remove duplicates\n\n\n5-6\nPerform full-text review of selected papers\n\n\n7\nExtract and code data (using Excel, NVivo, or another tool)\n\n\n8\nPerform quality assessment of selected studies\n\n\n9\nSynthesize results (narrative synthesis or thematic coding)\n\n\n10\nDraft findings and discuss implications\n\n\n11\nWrite the full paper, revise abstract and research questions as needed\n\n\n12\nFinal edits, formatting, citation management, submission prep\n\n\n\nSources\nThe Impact of human aspects on the interactions between software developers and end-users in software engineering: a Systematic Literature review"
+  },
+  {
+    "objectID": "posts/topic_3/index.html#abstract",
+    "href": "posts/topic_3/index.html#abstract",
+    "title": "Visualizing Traceability Graphs for AI-Critical Systems",
+    "section": "Abstract",
+    "text": "Abstract\n—-\nTraceability The ability to track and link different artifacts throughout the development lifecycle — from requirements → design → implementation → testing → deployment is a crucial component of successful software that meets goals and performs well. As AI is integrated into the software development lifecycle there is a lack of research on the topic of its trustworthiness and reliability in critical use cases, including healthcare, autonomous transportation, and defense. This research aims to investigate the current state an limitations of end to end traceability in AI critical systems. Through the analysis if static and dynamic code artifacts, metadata, and machine learning pipeline logs we will attempt to produce a framework for generating traceability graphs that make development process more transparent and less prone to errors. We will also produce a tool that will visualize traceability graphs in a modern and easy to understand way, with nodes and edges representing artifacts and traceability links, with visual cues on their current status.\nIn critical systems utilizing AI, especially those used in healthcare, autonomous vehicles, finance, or defense, this means there is a necessity for tracing:\n\nRequirements → What does the system need to do? (e.g., “Detect pedestrians safely”)\nData → What datasets were used to train the model?\nModels → What algorithms or architectures were used?\nTraining Processes → What parameters, loss functions, or preprocessing steps were applied?\nCode → What source code implements model logic?\nTesting → What test cases validate performance and safety?\nDeployment → How is the model deployed and monitored in real-world conditions?"
+  },
+  {
+    "objectID": "posts/topic_3/index.html#research-questions",
+    "href": "posts/topic_3/index.html#research-questions",
+    "title": "Visualizing Traceability Graphs for AI-Critical Systems",
+    "section": "Research questions",
+    "text": "Research questions\n\nRQ1: What are the current challenges in establishing end-to-end traceability in AI-critical systems?\nRQ2: How can traceability links between AI lifecycle artifacts be accurately established?\nRQ3: What formats and models are best for representing and visualizing traceability (e.g., graphs, hypergraphs)?\nRQ4: How can we automate traceability graph generation using static/dynamic analysis and metadata?\nRQ5: How does visualization affect developers’ and auditors’ ability to detect gaps, risks, or inconsistencies?"
+  },
+  {
+    "objectID": "posts/topic_3/index.html#timeline",
+    "href": "posts/topic_3/index.html#timeline",
+    "title": "Visualizing Traceability Graphs for AI-Critical Systems",
+    "section": "Timeline",
+    "text": "Timeline\n\n\n\n\n\n\n\n\nWeek\nObjectives\nDeliverables\n\n\n\n\n1\nLiterature review: Study traceability in SE, AI lifecycle models, and AI/ML DevOps.\nAnnotated bibliography, summaries of key traceability frameworks (e.g., T-Reqs, MLFlow).\n\n\n2\nProblem scoping: Define traceability challenges in AI-critical systems.\nRefined research questions and conceptual model of AI lifecycle artifacts.\n\n\n3\nRequirements gathering: Identify necessary metadata and artifacts for traceability.\nRequirements doc + artifact taxonomy (datasets, models, training logs, etc.)\n\n\n4\nExisting tools audit: Analyze current traceability and pipeline tools (MLFlow, DVC).\nEvaluation matrix comparing capabilities vs traceability needs.\n\n\n5\nPrototype design: Design a tool to extract and represent traceability links.\nInitial system architecture, mockups of visualization interface.\n\n\n6\nImplementation (part 1): Build core graph model + metadata parsers.\nPython/Rust module for creating traceability graphs from example projects.\n\n\n7\nImplementation (part 2): Add support for code + dataset versioning integration.\nCode that links models to data/code commits and requirements.\n\n\n8\nVisualization layer: Create UI to navigate and highlight traceability relationships.\nInteractive prototype (e.g., web-based graph viewer using D3.js or Graphviz).\n\n\n9\nTesting and evaluation: Run usability tests with developers/researchers.\nFeedback logs, bug reports, metrics on gap detection accuracy.\n\n\n10\nWrap-up and paper writing: Finalize tool and write research paper draft.\nResearch paper draft, tool repo, and demo video."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "2025_Ur2Phd_Notes_Blog",
+    "section": "",
+    "text": "SLR Investigating the Impact of Human Interactions between Software Developers and Users\n\n\n\nResearch Ideas\n\n\n\n\n\n\n\n\n\nMay 28, 2025\n\n\nSaul Ifshin\n\n\n\n\n\n\n\n\n\n\n\n\nResearch Idea: Human-AI Collaboration in Code Review\n\n\n\nResearch Ideas\n\n\n\n\n\n\n\n\n\nMay 28, 2025\n\n\nSaul Ifshin\n\n\n\n\n\n\n\n\n\n\n\n\nVisualizing Traceability Graphs for AI-Critical Systems\n\n\n\nResearch Ideas\n\n\n\n\n\n\n\n\n\nMay 28, 2025\n\n\nSaul Ifshin\n\n\n\n\n\n\n\n\n\n\n\n\nSelf Healing Test Cases\n\n\n\nResearch Ideas\n\n\n\n\n\n\n\n\n\nMay 28, 2025\n\n\nSaul Ifshin\n\n\n\n\n\nNo matching items"
   }
 ]
